@@ -15,6 +15,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -52,12 +53,21 @@ fun ChatScreen(viewModel: ChatViewModel = viewModel()) {
             .statusBarsPadding()
             .navigationBarsPadding()
     ) {
-        Text(
-            "ChainChat Node",
-            fontSize = 28.sp,
-            fontWeight = FontWeight.Bold,
-            color = Color(0xFF38BDF8) // Light Blue
-        )
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Icon(
+                painter = painterResource(id = R.drawable.ic_chainchat_logo),
+                contentDescription = "ChainChat Logo",
+                modifier = Modifier.size(48.dp),
+                tint = Color.Unspecified
+            )
+            Spacer(modifier = Modifier.width(12.dp))
+            Text(
+                "ChainChat Node",
+                fontSize = 28.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color(0xFF38BDF8) // Light Blue
+            )
+        }
         Text(
             "My Address: ${viewModel.myAddress.take(16)}...",
             fontSize = 12.sp,

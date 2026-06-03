@@ -6,7 +6,7 @@
 
     <!-- Outer Hexagon (The Node) -->
     <path
-        android:pathData="M54,15 L89,35 L89,73 L54,93 L19,73 L19,35 Z"
+        android:pathData="M54,10 L94,32 L94,76 L54,98 L14,76 L14,32 Z"
         android:strokeWidth="5"
         android:strokeColor="#00E5FF"
         android:strokeLineJoin="round" />
