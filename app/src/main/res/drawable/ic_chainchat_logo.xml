@@ -4,35 +4,31 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!-- Outer Hexagon (The Node) -->
+    <!-- Left Link (Purple) -->
     <path
-        android:pathData="M54,10 L94,32 L94,76 L54,98 L14,76 L14,32 Z"
-        android:strokeWidth="5"
+        android:pathData="M46,54 m-15,0 a15,15 0 1,1 30,0 a15,15 0 1,1 -30,0"
+        android:strokeWidth="10"
+        android:strokeColor="#AA00FF"
+        android:fillColor="#00000000" />
+
+    <!-- Right Link (Cyan) -->
+    <path
+        android:pathData="M62,54 m-15,0 a15,15 0 1,1 30,0 a15,15 0 1,1 -30,0"
+        android:strokeWidth="10"
         android:strokeColor="#00E5FF"
-        android:strokeLineJoin="round" />
+        android:fillColor="#00000000" />
 
-    <!-- Chain Link 1 (Top Left) -->
+    <!-- Interlocking Effect -->
     <path
-        android:pathData="M38,44 Q38,32 50,32 L58,32 Q70,32 70,44"
-        android:strokeWidth="6"
+        android:pathData="M46,39 A15,15 0 0 1 61,54"
+        android:strokeWidth="10"
         android:strokeColor="#AA00FF"
-        android:strokeLineCap="round" />
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
 
-    <!-- Chain Link 2 (Bottom Right) -->
+    <!-- Chat Bubble Tail (Cyan) -->
     <path
-        android:pathData="M70,64 Q70,76 58,76 L50,76 Q38,76 38,64"
-        android:strokeWidth="6"
-        android:strokeColor="#AA00FF"
-        android:strokeLineCap="round" />
-
-    <!-- Inner Chat Bubble Detail -->
-    <path
-        android:pathData="M70,54 L82,60 L70,60 Z"
-        android:fillColor="#00E5FF" />
-
-    <!-- Central Connecting Dot -->
-    <path
-        android:pathData="M54,54 m-6,0 a6,6 0 1,1 12,0 a6,6 0 1,1 -12,0"
+        android:pathData="M72,66 L84,78 L68,74 Z"
         android:fillColor="#00E5FF" />
 
 </vector>
