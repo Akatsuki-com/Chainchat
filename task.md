@@ -7,7 +7,8 @@
 - [x] Basic P2P Networking (TCP Server/Client, Block broadcasting).
 - [x] Prototype UI (Glassmorphic chat interface, Node dashboard).
 - [x] Initial `README.md` documentation.
-- [x] Application Logo & Icons (Neon Hex-Chain design).
+- [x] Application Logo & Icons (Simplified Interlocking Rings design).
+- [x] Project Rebranding (Renamed to ChainChat).
 
 ## 🚧 In Progress
 - [ ] **Handshake Protocol**: Implement node-to-node handshakes to exchange public keys and identity info in `P2PManager`.
